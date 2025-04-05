@@ -1,0 +1,496 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Tecno Solutions S.A. - Soluciones Tecnológicas para la Educación"
+>
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-lg z-50 h-[80px]">
+    <div class="container mx-auto px-4 h-full">
+      <div class="flex justify-between items-center h-full">
+        <a href="#" class="flex items-center">
+          <img
+            src="/assets/logo-dpw.jpg"
+            alt="Tecno Solutions Logo"
+            class="h-12 rounded-lg"
+          />
+          <span class="text-2xl font-bold text-primary ml-2"
+            >Tecno Solutions</span
+          >
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a
+            href="#inicio"
+            class="text-gray-700 hover:text-primary transition-colors">Inicio</a
+          >
+          <a
+            href="#servicios"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Servicios</a
+          >
+          <a
+            href="#valores"
+            class="text-gray-700 hover:text-primary transition-colors"
+            >Valores</a
+          >
+          <a
+            href="#contacto"
+            class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full transition-colors"
+            >Contacto</a
+          >
+        </div>
+        <button class="md:hidden text-gray-700" id="menuButton">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div
+      class="hidden md:hidden absolute top-[80px] left-0 w-full bg-white shadow-lg"
+      id="mobileMenu"
+    >
+      <div class="flex flex-col space-y-4 p-4">
+        <a
+          href="#inicio"
+          class="text-gray-700 hover:text-primary transition-colors">Inicio</a
+        >
+        <a
+          href="#servicios"
+          class="text-gray-700 hover:text-primary transition-colors"
+          >Servicios</a
+        >
+        <a
+          href="#valores"
+          class="text-gray-700 hover:text-primary transition-colors">Valores</a
+        >
+        <a
+          href="#contacto"
+          class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full transition-colors text-center"
+          >Contacto</a
+        >
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section
+      id="inicio"
+      class="bg-gradient-to-r from-primary to-primary-dark text-white min-h-screen flex items-center"
+    >
+      <div class="container mx-auto px-4 py-20">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Innovación Tecnológica para la Educación
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+              Brindamos soluciones tecnológicas innovadoras en software,
+              mantenimiento de equipos y capacitación en el uso de Chromebooks
+              en el aula.
+            </p>
+            <a
+              href="#contacto"
+              class="inline-block bg-secondary hover:bg-secondary-dark text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105"
+            >
+              Contáctanos
+            </a>
+          </div>
+          <div class="md:w-1/2 mt-12 md:mt-0" data-aos="fade-left">
+            <div
+              class="carousel relative overflow-hidden rounded-2xl shadow-lg h-96"
+            >
+              <!-- Contenedor de slides -->
+              <div class="carousel-inner relative w-full h-full">
+                <div
+                  class="carousel-item absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out"
+                >
+                  <img
+                    src="/assets/hero.webp"
+                    alt="Imagen 1"
+                    class="w-full h-full object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+                <div
+                  class="carousel-item absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out"
+                >
+                  <img
+                    src="/assets/hero-2.webp"
+                    alt="Imagen 2"
+                    class="w-full h-full object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+                <div
+                  class="carousel-item absolute w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out"
+                >
+                  <img
+                    src="/assets/hero-3.webp"
+                    alt="Imagen 3"
+                    class="w-full h-full object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
+              <!-- Botones de navegación -->
+              <button
+                class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white px-3 py-1 rounded"
+              >
+                Prev
+              </button>
+              <button
+                class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white px-3 py-1 rounded"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12"
+          data-aos="fade-up"
+        >
+          Nuestros Servicios
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="text-secondary text-4xl mb-6">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Software Educativo</h3>
+            <p class="text-gray-600">
+              Soluciones de software innovadoras diseñadas específicamente para
+              el entorno educativo.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="text-secondary text-4xl mb-6">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Mantenimiento de Equipos</h3>
+            <p class="text-gray-600">
+              Servicio técnico especializado para mantener tu infraestructura
+              tecnológica en óptimas condiciones.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="text-secondary text-4xl mb-6">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Capacitación Chromebook</h3>
+            <p class="text-gray-600">
+              Programas de capacitación para maximizar el uso de Chromebooks en
+              el aula.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section id="valores" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12"
+          data-aos="fade-up"
+        >
+          Nuestros Valores
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-lightbulb text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary mb-4">Innovación</h3>
+            <p class="text-gray-600">
+              Buscamos constantemente nuevas formas de mejorar la educación a
+              través de la tecnología.
+            </p>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-shield-alt text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary mb-4">Confiabilidad</h3>
+            <p class="text-gray-600">
+              Nos comprometemos a brindar soluciones seguras y confiables para
+              nuestros clientes.
+            </p>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-universal-access text-3xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary mb-4">Accesibilidad</h3>
+            <p class="text-gray-600">
+              Hacemos que la tecnología educativa sea accesible para todas las
+              instituciones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12"
+          data-aos="fade-up"
+        >
+          Contáctanos
+        </h2>
+        <div class="max-w-lg mx-auto" data-aos="fade-up" data-aos-delay="100">
+          <form class="space-y-6 bg-white p-8 rounded-xl shadow-lg">
+            <div>
+              <label
+                for="nombre"
+                class="block text-sm font-medium text-gray-700">Nombre</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="mt-1 p-4 border block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 p-4 border block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary"
+              />
+            </div>
+            <div>
+              <label
+                for="mensaje"
+                class="block text-sm font-medium text-gray-700">Mensaje</label
+              >
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                class="mt-1 p-4 border block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105"
+            >
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left"
+      >
+        <!-- Columna 1: Logo y descripción -->
+        <div>
+          <img
+            src="/assets/logo-dpw.jpg"
+            alt="Tecno Solutions Logo"
+            class="h-12 mx-auto md:mx-0 mb-4"
+          />
+          <p class="text-gray-400">
+            Soluciones tecnológicas innovadoras para la educación.
+          </p>
+        </div>
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Enlaces Rápidos</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#inicio"
+                class="text-gray-400 hover:text-white transition-colors"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#servicios"
+                class="text-gray-400 hover:text-white transition-colors"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a
+                href="#valores"
+                class="text-gray-400 hover:text-white transition-colors"
+                >Valores</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contacto"
+                class="text-gray-400 hover:text-white transition-colors"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Columna 3: Contacto -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contacto</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>
+              <i class="fas fa-envelope mr-2"></i> info@tecnosolutions.com
+            </li>
+            <li>
+              <i class="fas fa-phone mr-2"></i> +1 234 567 890
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt mr-2"></i> Ciudad, País
+            </li>
+          </ul>
+        </div>
+        <!-- Columna 4: Redes Sociales -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Redes Sociales</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="https://www.facebook.com/share/1H53S42NLJ/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors flex items-center justify-center md:justify-start"
+              >
+                <i class="fab fa-facebook-f mr-2"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors flex items-center justify-center md:justify-start"
+              >
+                <i class="fab fa-twitter mr-2"></i> Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors flex items-center justify-center md:justify-start"
+              >
+                <i class="fab fa-instagram mr-2"></i> Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors flex items-center justify-center md:justify-start"
+              >
+                <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">
+          &copy; 2024 Tecno Solutions S.A. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    // Toggle del menú (solo se ejecuta si menuButton no es null)
+    menuButton?.addEventListener("click", () => {
+      mobileMenu?.classList.toggle("hidden");
+    });
+
+    // Cerrar menú al hacer clic en un enlace (solo se ejecuta si mobileMenu no es null)
+    const mobileLinks = mobileMenu?.querySelectorAll("a");
+    mobileLinks?.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu?.classList.add("hidden");
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Obtenemos los elementos del carrusel tipando como HTMLElement
+      const carouselItems: NodeListOf<HTMLElement> =
+        document.querySelectorAll(".carousel-item");
+      let currentIndex: number = 0;
+      const totalItems: number = carouselItems.length;
+
+      // Usamos 'as HTMLElement | null' para indicarle a TS el tipo de estos elementos
+      const nextButton = document.querySelector(".next") as HTMLElement | null;
+      const prevButton = document.querySelector(".prev") as HTMLElement | null;
+
+      // Función para mostrar el slide activo
+      function showSlide(index: number): void {
+        carouselItems.forEach((item, i) => {
+          if (i === index) {
+            item.classList.remove("opacity-0");
+            item.classList.add("opacity-100");
+          } else {
+            item.classList.remove("opacity-100");
+            item.classList.add("opacity-0");
+          }
+        });
+      }
+
+      // Avanza al siguiente slide
+      function nextSlide(): void {
+        currentIndex = (currentIndex + 1) % totalItems;
+        showSlide(currentIndex);
+      }
+
+      // Retrocede al slide anterior
+      function prevSlide(): void {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        showSlide(currentIndex);
+      }
+
+      // Eventos para los botones (con encadenamiento opcional)
+      nextButton?.addEventListener("click", nextSlide);
+      prevButton?.addEventListener("click", prevSlide);
+
+      // Cambio automático cada 5 segundos
+      setInterval(nextSlide, 5000);
+
+      // Muestra el primer slide al iniciar
+      showSlide(currentIndex);
+    });
+  </script>
+</Layout>
